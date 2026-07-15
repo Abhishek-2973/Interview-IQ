@@ -11,9 +11,12 @@ import paymentRouter from "./routes/payment.route.js"
 
 const app = express()
 app.use(cors({
-    origin:"https://interview-iq-client-c7ar.onrender.com",
-    credentials:true
-}))
+    origin: [
+        "http://localhost:5173",
+        "https://interview-iq-client-c7ar.onrender.com"
+    ],
+    credentials: true
+}));
 
 app.use(express.json())
 app.use(cookieParser())
