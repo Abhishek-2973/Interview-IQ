@@ -11,7 +11,7 @@ import paymentRouter from "./routes/payment.route.js"
 
 const app = express()
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://interview-iq-1-sc1e.onrender.com",
     credentials:true
 }))
 
