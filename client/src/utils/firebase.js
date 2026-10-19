@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from "firebase/auth"
 const firebaseConfig = {
-  apiKey: "AIzaSyAYjFT1LANOubTiHfu2gMs4flev5bFn5lU",
+  apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
   authDomain: "interviewiq-1341b.firebaseapp.com",
   projectId: "interviewiq-1341b",
   storageBucket: "interviewiq-1341b.firebasestorage.app",
